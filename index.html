@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link  rel="stylesheet" type="text/css" href="styles.css"/>
+        <!-- wanted to do this as a module but not sure if you're running on a server -->
+        <script src="script.js"></script>
+        <script>let game;</script>
+    </head>
+    <body>
+        <div id="table">
+        </div>
+        <input type="button" id="reset" value="Reset" onClick="game.reset()"/>
+        <input type="button" id="shuffle" value="Shuffle" onClick="game.shuffle()"/>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() { 
+                game = new Game();
+                game.init();
+            });
+        </script>
+    </body>
+</html>

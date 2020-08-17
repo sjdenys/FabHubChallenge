@@ -1,0 +1,15 @@
+#table{
+    border: solid black 2px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#table > div{
+    height: 45px;
+    width: 45px;
+    border: solid black 2px;
+}
